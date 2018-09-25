@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title> LOG MASUK </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('buku.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+  <img src="logo.jpg" alt="COMPANY" width="100" height="77">
+  </div>
+  <div class="w3-display-middle">
+    <center> <h1 class="w3-jumbo w3-animate-top"> LOG MASUK KE PUSAT TUISYEN CERDIK BESTARI 2018 </h1> </center>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+
+     <center>  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large"> LOG MASUK
+ </button> </center>
+ <br><br>
+ <center>  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large"> <a href="login.html">DAFTAR MASUK</a>
+ </button> </center>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+        <img src="logo.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          <label><b>Email</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Email" name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Daftar masuk </button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+  
+  </div>
+</div>
+</body>
+</html>
